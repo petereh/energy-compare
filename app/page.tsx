@@ -1,69 +1,154 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+export default function UploadPage() {
+  const router = useRouter();
+  const [file, setFile] = useState<File | null>(null);
+  const [contractStatus, setContractStatus] = useState<string>('');
+  const [contractEndDate, setContractEndDate] = useState<string>('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [dragActive, setDragActive] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!file || !contractStatus) {
+      setError('Add your bill and let us know your contract status to continue.');
+      return;
+    }
+    setLoading(true);
+    setError(null);
+
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('contract_status', contractStatus);
+    if (contractEndDate) formData.append('contract_end_date', contractEndDate);
+
+    try {
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong reading your bill.');
+      router.push(`/results/${data.id}`);
+    } catch (err: any) {
+      setError(err.message);
+      setLoading(false);
+    }
+  }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-[#F7F3EA] text-[#1F3D2B]">
+      <div className="mx-auto max-w-2xl px-6 py-16 md:py-24">
+        {/* Eyebrow */}
+        <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#1F3D2B]/60">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#E8A33D]" />
+          For Irish households
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <h1 className="font-serif text-4xl leading-[1.1] md:text-5xl">
+          Is your energy provider quietly overcharging you?
+        </h1>
+        <p className="mt-4 text-lg text-[#1F3D2B]/70">
+          Upload a recent electricity or gas bill. We'll read the rates and check them
+          against every plan on the Irish market — no account, no phone calls.
+        </p>
+
+        <form onSubmit={handleSubmit} className="mt-10 space-y-8">
+          {/* File drop zone */}
+          <div>
+            <label className="mb-2 block text-sm font-semibold">Your bill (PDF)</label>
+            <div
+              onDragOver={(e) => { e.preventDefault(); setDragActive(true); }}
+              onDragLeave={() => setDragActive(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragActive(false);
+                const dropped = e.dataTransfer.files?.[0];
+                if (dropped) setFile(dropped);
+              }}
+              className={`relative rounded-lg border-2 border-dashed px-6 py-10 text-center transition-colors ${
+                dragActive
+                  ? 'border-[#E8A33D] bg-[#E8A33D]/5'
+                  : 'border-[#1F3D2B]/25 bg-white/40'
+              }`}
+            >
+              <input
+                type="file"
+                accept="application/pdf"
+                onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+              />
+              {file ? (
+                <p className="font-medium">{file.name}</p>
+              ) : (
+                <>
+                  <p className="font-medium">Drop your bill here, or click to browse</p>
+                  <p className="mt-1 text-sm text-[#1F3D2B]/50">PDF only, up to 10MB</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Contract status */}
+          <div>
+            <label className="mb-2 block text-sm font-semibold">
+              Are you currently in contract with your provider?
+            </label>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+              {[
+                { value: 'in_contract', label: 'Yes, in contract' },
+                { value: 'out_of_contract', label: 'No, free to switch' },
+                { value: 'not_sure', label: "Not sure" },
+              ].map((opt) => (
+                <button
+                  type="button"
+                  key={opt.value}
+                  onClick={() => setContractStatus(opt.value)}
+                  className={`rounded-md border px-4 py-3 text-sm font-medium transition-colors ${
+                    contractStatus === opt.value
+                      ? 'border-[#1F3D2B] bg-[#1F3D2B] text-[#F7F3EA]'
+                      : 'border-[#1F3D2B]/25 bg-white/40 hover:border-[#1F3D2B]/50'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {contractStatus === 'in_contract' && (
+            <div>
+              <label className="mb-2 block text-sm font-semibold">
+                Contract end date <span className="font-normal text-[#1F3D2B]/50">(optional)</span>
+              </label>
+              <input
+                type="date"
+                value={contractEndDate}
+                onChange={(e) => setContractEndDate(e.target.value)}
+                className="w-full rounded-md border border-[#1F3D2B]/25 bg-white/60 px-4 py-3 text-sm"
+              />
+            </div>
+          )}
+
+          {error && (
+            <p className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-800">{error}</p>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded-md bg-[#1F3D2B] px-6 py-4 font-semibold text-[#F7F3EA] transition-opacity hover:opacity-90 disabled:opacity-50"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            {loading ? 'Reading your bill…' : 'Check for a better deal'}
+          </button>
+        </form>
+
+        <p className="mt-8 text-center text-xs text-[#1F3D2B]/40">
+          Your bill is read once to extract rates and usage, then discarded from active
+          processing. We never contact your provider or share your details.
+        </p>
+      </div>
+    </main>
   );
 }
