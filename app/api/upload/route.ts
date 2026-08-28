@@ -2,13 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import { supabaseAdmin } from '@/lib/supabase';
 import { EXTRACTION_SYSTEM_PROMPT } from '@/lib/extraction-prompt';
-// pdf-parse has no types by default; requiring avoids a build-time debug-mode issue
-// where the package tries to read a local test file if imported at the top level.
-const pdfParse = require('pdf-parse');
 
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
+  const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
   try {
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
@@ -23,6 +22,8 @@ export async function POST(req: NextRequest) {
     }
 
     // 1. Extract raw text from the PDF
+    // Lazy-load pdf-parse to avoid build-time issues
+    const pdfParse = require('pdf-parse');
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const pdfData = await pdfParse(buffer);
