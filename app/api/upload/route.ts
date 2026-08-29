@@ -9,10 +9,12 @@ export const dynamic = 'force-dynamic';
 export async function POST(req: NextRequest) {
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
   try {
+    console.log('[Upload] Starting upload processing...');
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
     const contractStatus = formData.get('contract_status') as string | null;
     const contractEndDate = formData.get('contract_end_date') as string | null;
+    console.log(`[Upload] File: ${file?.name}, Status: ${contractStatus}`);
 
     if (!file) {
       return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
@@ -139,9 +141,10 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    console.log(`[Upload] Success! Bill ID: ${billUploadId}`);
     return NextResponse.json({ id: billUploadId, extraction_confidence: extracted.extraction_confidence });
   } catch (err) {
-    console.error('Upload route error:', err);
+    console.error('[Upload] Error:', err);
     return NextResponse.json({ error: 'Unexpected server error' }, { status: 500 });
   }
 }
