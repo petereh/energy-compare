@@ -35,8 +35,8 @@ export default function ResultsPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Handle comma-separated IDs (for dual uploads) - just use the first one for now
-    const firstId = id.split(',')[0].trim();
+    // Handle tilde-separated IDs (for dual uploads) - just use the first one for now
+    const firstId = id.split('~')[0].trim();
     console.log(`[Results] Full ID param: ${id}`);
     console.log(`[Results] Using first ID: ${firstId}`);
     fetch(`/api/compare?bill_upload_id=${firstId}`)

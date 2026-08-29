@@ -48,8 +48,8 @@ export default function UploadPage() {
         uploadedIds.push(data.id);
       }
 
-      // Navigate to results with all IDs
-      const ids = uploadedIds.join(',');
+      // Navigate to results with all IDs (use ~ as separator to avoid URL encoding issues)
+      const ids = uploadedIds.join('~');
       router.push(`/results/${ids}`);
     } catch (err: any) {
       setError(err.message);
