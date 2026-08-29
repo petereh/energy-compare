@@ -35,7 +35,9 @@ export default function ResultsPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`/api/compare?bill_upload_id=${id}`)
+    // Handle comma-separated IDs (for dual uploads) - just use the first one for now
+    const firstId = id.split(',')[0];
+    fetch(`/api/compare?bill_upload_id=${firstId}`)
       .then(async (res) => {
         const json = await res.json();
         if (!res.ok) throw new Error(json.error || 'Could not load comparison');

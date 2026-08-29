@@ -5,18 +5,27 @@ import { useRouter } from 'next/navigation';
 
 export default function UploadPage() {
   const router = useRouter();
-  const [electricityFile, setElectricityFile] = useState<File | null>(null);
-  const [gasFile, setGasFile] = useState<File | null>(null);
+  const [files, setFiles] = useState<File[]>([]);
   const [contractStatus, setContractStatus] = useState<string>('');
   const [contractEndDate, setContractEndDate] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [dragActiveElec, setDragActiveElec] = useState(false);
-  const [dragActiveGas, setDragActiveGas] = useState(false);
+  const [dragActive, setDragActive] = useState(false);
+
+  function handleFileChange(newFiles: FileList | null) {
+    if (!newFiles) return;
+    const fileArray = Array.from(newFiles);
+    // Limit to 2 files max (electricity + gas)
+    setFiles((prev) => [...prev, ...fileArray].slice(0, 2));
+  }
+
+  function removeFile(index: number) {
+    setFiles((prev) => prev.filter((_, i) => i !== index));
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if ((!electricityFile && !gasFile) || !contractStatus) {
+    if (files.length === 0 || !contractStatus) {
       setError('Upload at least one bill and select your contract status to continue.');
       return;
     }
@@ -24,106 +33,28 @@ export default function UploadPage() {
     setError(null);
 
     try {
-      // Upload electricity bill if present
-      let electricityId: string | null = null;
-      if (electricityFile) {
+      const uploadedIds: string[] = [];
+
+      // Upload each bill (Claude will auto-detect if it's electricity or gas)
+      for (const file of files) {
         const formData = new FormData();
-        formData.append('file', electricityFile);
+        formData.append('file', file);
         formData.append('contract_status', contractStatus);
         if (contractEndDate) formData.append('contract_end_date', contractEndDate);
 
         const res = await fetch('/api/upload', { method: 'POST', body: formData });
         const data = await res.json();
-        if (!res.ok) throw new Error(data.error || 'Failed to process electricity bill');
-        electricityId = data.id;
+        if (!res.ok) throw new Error(data.error || `Failed to process ${file.name}`);
+        uploadedIds.push(data.id);
       }
 
-      // Upload gas bill if present
-      let gasId: string | null = null;
-      if (gasFile) {
-        const formData = new FormData();
-        formData.append('file', gasFile);
-        formData.append('contract_status', contractStatus);
-        if (contractEndDate) formData.append('contract_end_date', contractEndDate);
-
-        const res = await fetch('/api/upload', { method: 'POST', body: formData });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.error || 'Failed to process gas bill');
-        gasId = data.id;
-      }
-
-      // Navigate to results with both IDs (or just one)
-      const ids = [electricityId, gasId].filter(Boolean).join(',');
+      // Navigate to results with all IDs
+      const ids = uploadedIds.join(',');
       router.push(`/results/${ids}`);
     } catch (err: any) {
       setError(err.message);
       setLoading(false);
     }
-  }
-
-  function FileDropZone({
-    label,
-    file,
-    setFile,
-    dragActive,
-    setDragActive,
-  }: {
-    label: string;
-    file: File | null;
-    setFile: (f: File | null) => void;
-    dragActive: boolean;
-    setDragActive: (a: boolean) => void;
-  }) {
-    return (
-      <div>
-        <label className="mb-2 block text-sm font-semibold">{label}</label>
-        <div
-          onDragOver={(e) => {
-            e.preventDefault();
-            setDragActive(true);
-          }}
-          onDragLeave={() => setDragActive(false)}
-          onDrop={(e) => {
-            e.preventDefault();
-            setDragActive(false);
-            const dropped = e.dataTransfer.files?.[0];
-            if (dropped) setFile(dropped);
-          }}
-          className={`relative rounded-lg border-2 border-dashed px-6 py-8 text-center transition-colors ${
-            dragActive
-              ? 'border-[#E8A33D] bg-[#E8A33D]/5'
-              : 'border-[#1F3D2B]/25 bg-white/40'
-          }`}
-        >
-          <input
-            type="file"
-            accept="application/pdf"
-            onChange={(e) => setFile(e.target.files?.[0] ?? null)}
-            className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-          />
-          {file ? (
-            <div className="flex items-center justify-between">
-              <p className="font-medium text-sm">{file.name}</p>
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setFile(null);
-                }}
-                className="text-xs text-[#1F3D2B]/50 hover:text-[#1F3D2B] underline"
-              >
-                Remove
-              </button>
-            </div>
-          ) : (
-            <>
-              <p className="font-medium text-sm">Drop PDF here or click to browse</p>
-              <p className="mt-1 text-xs text-[#1F3D2B]/50">Optional • Up to 10MB</p>
-            </>
-          )}
-        </div>
-      </div>
-    );
   }
 
   return (
@@ -139,33 +70,84 @@ export default function UploadPage() {
           Is your energy provider quietly overcharging you?
         </h1>
         <p className="mt-4 text-lg text-[#1F3D2B]/70">
-          Upload your <strong>electricity and/or gas bills</strong>. We'll analyze your usage and
-          rates, then compare against every plan on the Irish market — including dual-fuel bundles
-          from your current provider.
+          Upload your <strong>electricity and/or gas bills</strong>. We'll automatically detect
+          the fuel type, analyze your usage and rates, then compare against every plan on the
+          Irish market.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-10 space-y-6">
-          {/* Bill uploads */}
-          <div className="space-y-4">
-            <FileDropZone
-              label="Electricity bill (PDF)"
-              file={electricityFile}
-              setFile={setElectricityFile}
-              dragActive={dragActiveElec}
-              setDragActive={setDragActiveElec}
-            />
-            <FileDropZone
-              label="Gas bill (PDF)"
-              file={gasFile}
-              setFile={setGasFile}
-              dragActive={dragActiveGas}
-              setDragActive={setDragActiveGas}
-            />
+          {/* Single file drop zone */}
+          <div>
+            <label className="mb-2 block text-sm font-semibold">
+              Your energy bills (PDF) — up to 2 files
+            </label>
+            <div
+              onDragOver={(e) => {
+                e.preventDefault();
+                setDragActive(true);
+              }}
+              onDragLeave={() => setDragActive(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragActive(false);
+                handleFileChange(e.dataTransfer.files);
+              }}
+              className={`relative rounded-lg border-2 border-dashed px-6 py-10 text-center transition-colors ${
+                dragActive
+                  ? 'border-[#E8A33D] bg-[#E8A33D]/5'
+                  : 'border-[#1F3D2B]/25 bg-white/40'
+              }`}
+            >
+              <input
+                type="file"
+                accept="application/pdf"
+                multiple
+                onChange={(e) => handleFileChange(e.target.files)}
+                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+              />
+              {files.length > 0 ? (
+                <div className="space-y-2">
+                  {files.map((file, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center justify-between rounded-md bg-white/60 px-4 py-2"
+                    >
+                      <p className="text-sm font-medium">{file.name}</p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          removeFile(idx);
+                        }}
+                        className="text-xs text-[#1F3D2B]/50 hover:text-[#1F3D2B] underline"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  ))}
+                  {files.length < 2 && (
+                    <p className="pt-2 text-xs text-[#1F3D2B]/50">
+                      Click or drop to add {files.length === 1 ? 'another' : 'more'} bill
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <>
+                  <p className="font-medium">Drop your bills here, or click to browse</p>
+                  <p className="mt-1 text-sm text-[#1F3D2B]/50">
+                    We'll automatically detect electricity vs gas • Up to 2 PDFs, 10MB each
+                  </p>
+                </>
+              )}
+            </div>
           </div>
 
-          <p className="text-sm text-[#1F3D2B]/60">
-            💡 <strong>Tip:</strong> Upload both bills to see dual-fuel bundle savings
-          </p>
+          {files.length > 0 && (
+            <p className="text-sm text-[#1F3D2B]/60">
+              💡 <strong>Tip:</strong> Upload both electricity and gas bills to see dual-fuel
+              bundle options
+            </p>
+          )}
 
           {/* Contract status */}
           <div>
@@ -220,17 +202,6 @@ export default function UploadPage() {
             {loading ? 'Reading your bills…' : 'Compare plans'}
           </button>
         </form>
-
-        <div className="mt-8 space-y-2 text-center text-xs text-[#1F3D2B]/40">
-          <p>
-            Your bills are read once to extract rates and usage, then discarded from active
-            processing. We never contact your provider or share your details.
-          </p>
-          <p>
-            <strong>Have solar panels?</strong> No problem — we compare based on your unit rates,
-            not bill totals, so solar credits won't affect the comparison.
-          </p>
-        </div>
       </div>
     </main>
   );
