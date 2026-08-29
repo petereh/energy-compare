@@ -1,0 +1,101 @@
+{
+  "scraped_at": "2026-08-29T20:35:02.263Z",
+  "total_duration_seconds": 59.88,
+  "total_plans": 63,
+  "total_solar_export_rates": 0,
+  "providers_succeeded": 7,
+  "providers_total": 7,
+  "results": [
+    {
+      "provider_name": "Energia",
+      "success": true,
+      "plans_count": 0,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:07.854Z"
+    },
+    {
+      "provider_name": "Bord Gáis Energy",
+      "success": true,
+      "plans_count": 0,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:12.625Z"
+    },
+    {
+      "provider_name": "Flogas",
+      "success": true,
+      "plans_count": 0,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:44.372Z"
+    },
+    {
+      "provider_name": "Electric Ireland",
+      "success": true,
+      "plans_count": 60,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:48.163Z"
+    },
+    {
+      "provider_name": "SSE Airtricity",
+      "success": true,
+      "plans_count": 0,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:52.577Z"
+    },
+    {
+      "provider_name": "Yuno Energy",
+      "success": true,
+      "plans_count": 2,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:34:57.655Z"
+    },
+    {
+      "provider_name": "PrepayPower",
+      "success": true,
+      "plans_count": 1,
+      "solar_export_rate": null,
+      "error_message": null,
+      "scraped_at": "2026-08-29T20:35:02.262Z"
+    }
+  ],
+  "plans_by_fuel_type": {
+    "electricity": 39,
+    "gas": 3,
+    "dual_fuel": 21
+  },
+  "plans_by_provider": [
+    {
+      "provider": "Energia",
+      "count": 0
+    },
+    {
+      "provider": "Bord Gáis Energy",
+      "count": 0
+    },
+    {
+      "provider": "Flogas",
+      "count": 0
+    },
+    {
+      "provider": "Electric Ireland",
+      "count": 60
+    },
+    {
+      "provider": "SSE Airtricity",
+      "count": 0
+    },
+    {
+      "provider": "Yuno Energy",
+      "count": 2
+    },
+    {
+      "provider": "PrepayPower",
+      "count": 1
+    }
+  ]
+}

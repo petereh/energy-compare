@@ -1,0 +1,8 @@
+# Block admin pages from search engines
+User-agent: *
+Disallow: /admin
+Disallow: /api/admin
+
+# Allow public pages
+Allow: /
+Allow: /results

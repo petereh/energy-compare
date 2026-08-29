@@ -1,0 +1,2012 @@
+[
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Energysaver 16%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 16,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 31.95,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.12,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.83,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.13,
+        "price_change_sequence": 4
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 38.62,
+        "price_change_sequence": 5
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Energysaver 16%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 16,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 31.95,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 31.95,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Energysaver Nightsaver 16%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 16,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.12,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.83,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.12,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.83,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.13,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.13,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity NightSaver",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 38.62,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 19.15,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 38.62,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 19.15,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Electric + SST Saver 20%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.04,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.6,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.04,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.6,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Electric + Saver 20%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 29.81,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 29.81,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Electric+ Night Boost",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.6,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.88,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "ev"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.6,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.88,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Electric+ Weekender",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 38.65,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 38.65,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Electric SST Saver 20%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.04,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.6,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.04,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.6,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "EnergySaver Dual NightSaver 20%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 4
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 5
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "EnergySaver Dual NightSaver 20%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Electricity and Gas",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity & Gas",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.99,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.99,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity NightSaver & Gas",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.39,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.39,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual + SST Saver 18%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Saver 18%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.55,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.55,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Night Boost",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.4,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.95,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.53,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "ev"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.4,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.95,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.53,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Weekender",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.42,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.42,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual SST Saver 18%",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 245,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Gas",
+    "fuel_type": "gas",
+    "standing_charge_daily_rate": 180,
+    "vat_rate": 13.5,
+    "discount_pct": 10,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.02,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Gas",
+    "fuel_type": "gas",
+    "standing_charge_daily_rate": 180,
+    "vat_rate": 13.5,
+    "discount_pct": 10,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.02,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "gas",
+    "standing_charge_daily_rate": 180,
+    "vat_rate": 13.5,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.02,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "EnergySaver Dual NightSaver 20%",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 4
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 5
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "EnergySaver Dual NightSaver 20%",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 32.5,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 16.03,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Electricity and Gas",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 20,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.43,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 9.79,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity & Gas",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.99,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.99,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Green Electricity NightSaver & Gas",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.39,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.39,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 18.54,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 3
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual + SST Saver 18%",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Saver 18%",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.55,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 30.55,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Night Boost",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.4,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.95,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.53,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "ev"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 36.4,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.95,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.53,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual+ Weekender",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.42,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 37.42,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 11.2,
+        "price_change_sequence": 2
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Home Dual SST Saver 18%",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": 18,
+    "exit_fee": 50,
+    "contract_length_months": 12,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Electric Ireland",
+    "name": "Pricing",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 425,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "24 Hour",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 33.24,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.46,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 35.47,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 10.04,
+        "price_change_sequence": 4
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Yuno Energy",
+    "name": "Dual Fuel Bonus",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 17.16,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 100,
+    "contract_length_months": null,
+    "source_url": "https://www.yunoenergy.ie/plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 4
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 5
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "Yuno Energy",
+    "name": "Electricity",
+    "fuel_type": "dual_fuel",
+    "standing_charge_daily_rate": 17.16,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 100,
+    "contract_length_months": null,
+    "source_url": "https://www.yunoenergy.ie/plans",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 1
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 2
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 3
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 4
+      },
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 17.16,
+        "price_change_sequence": 5
+      }
+    ],
+    "smart_meter_required": false,
+    "plan_type": "standard"
+  },
+  {
+    "provider_name": "PrepayPower",
+    "name": "PrepayPower Electricity",
+    "fuel_type": "electricity",
+    "standing_charge_daily_rate": 86.13,
+    "vat_rate": 9,
+    "discount_pct": null,
+    "exit_fee": 0,
+    "contract_length_months": null,
+    "source_url": "https://www.prepaypower.ie/our-services/pre-pay-electricity",
+    "active": true,
+    "plan_rates": [
+      {
+        "band_name": "Standard",
+        "band_category": "24hr",
+        "rate_cents_per_kwh": 34.51,
+        "price_change_sequence": 1
+      }
+    ],
+    "smart_meter_required": true,
+    "plan_type": "prepay"
+  }
+]

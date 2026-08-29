@@ -1,0 +1,64 @@
+Provider,Plan Name,Fuel Type,Unit Rate (c/kWh),Standing Charge (c/day),Discount %,Exit Fee,Contract Months,Smart Meter Required,Source URL
+Electric Ireland,Energysaver 16%,electricity,31.95,245,16,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Energysaver 16%,electricity,31.95,245,16,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,31.95,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Energysaver Nightsaver 16%,electricity,34.12,245,16,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,34.12,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Green Electricity,electricity,36.13,245,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,36.13,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Green Electricity NightSaver,electricity,38.62,245,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,38.62,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Home Electric + SST Saver 20%,electricity,32.43,245,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,32.43,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Home Electric + Saver 20%,electricity,29.81,245,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,29.81,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Home Electric+ Night Boost,electricity,37.6,245,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,37.6,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Home Electric+ Weekender,electricity,38.65,245,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,38.65,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Home Electric SST Saver 20%,electricity,32.43,245,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,Pricing,electricity,32.43,245,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/electricity-price-plans
+Electric Ireland,EnergySaver Dual NightSaver 20%,electricity,32.5,245,20,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,EnergySaver Dual NightSaver 20%,electricity,32.5,245,20,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,32.5,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Electricity and Gas,electricity,30.43,245,20,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,30.43,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Green Electricity & Gas,electricity,34.99,245,,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,34.99,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Green Electricity NightSaver & Gas,electricity,37.39,245,,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,37.39,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Home Dual + SST Saver 18%,electricity,33.24,245,18,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,33.24,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Home Dual+ Saver 18%,electricity,30.55,245,18,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,30.55,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Home Dual+ Night Boost,electricity,36.4,245,,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,36.4,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Home Dual+ Weekender,electricity,37.42,245,,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,37.42,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Home Dual SST Saver 18%,electricity,33.24,245,18,50,12,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Pricing,electricity,33.24,245,,0,,Yes,https://www.electricireland.ie/residential/electricity-and-gas/smart-meter-price-plans
+Electric Ireland,Gas,gas,11.02,180,10,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans
+Electric Ireland,Gas,gas,11.02,180,10,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans
+Electric Ireland,Pricing,gas,11.02,180,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/gas-price-plans
+Electric Ireland,EnergySaver Dual NightSaver 20%,dual_fuel,32.5,425,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,EnergySaver Dual NightSaver 20%,dual_fuel,32.5,425,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,32.5,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Electricity and Gas,dual_fuel,30.43,425,20,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,30.43,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Green Electricity & Gas,dual_fuel,34.99,425,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,34.99,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Green Electricity NightSaver & Gas,dual_fuel,37.39,425,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,37.39,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Home Dual + SST Saver 18%,dual_fuel,33.24,425,18,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,33.24,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Home Dual+ Saver 18%,dual_fuel,30.55,425,18,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,30.55,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Home Dual+ Night Boost,dual_fuel,36.4,425,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,36.4,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Home Dual+ Weekender,dual_fuel,37.42,425,,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,37.42,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Home Dual SST Saver 18%,dual_fuel,33.24,425,18,50,12,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Electric Ireland,Pricing,dual_fuel,33.24,425,,0,,No,https://www.electricireland.ie/residential/electricity-and-gas/dual-fuel-price-plans
+Yuno Energy,Dual Fuel Bonus,dual_fuel,17.16,17.16,,100,,No,https://www.yunoenergy.ie/plans
+Yuno Energy,Electricity,dual_fuel,17.16,17.16,,100,,No,https://www.yunoenergy.ie/plans
+PrepayPower,PrepayPower Electricity,electricity,34.51,86.13,,0,,Yes,https://www.prepaypower.ie/our-services/pre-pay-electricity
