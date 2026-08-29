@@ -36,14 +36,20 @@ export default function ResultsPage() {
 
   useEffect(() => {
     // Handle comma-separated IDs (for dual uploads) - just use the first one for now
-    const firstId = id.split(',')[0];
+    const firstId = id.split(',')[0].trim();
+    console.log(`[Results] Full ID param: ${id}`);
+    console.log(`[Results] Using first ID: ${firstId}`);
     fetch(`/api/compare?bill_upload_id=${firstId}`)
       .then(async (res) => {
         const json = await res.json();
+        console.log(`[Results] API response:`, json);
         if (!res.ok) throw new Error(json.error || 'Could not load comparison');
         setData(json);
       })
-      .catch((err) => setError(err.message));
+      .catch((err) => {
+        console.error(`[Results] Error:`, err);
+        setError(err.message);
+      });
   }, [id]);
 
   if (error) {
