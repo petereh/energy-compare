@@ -50,14 +50,16 @@ export default function UploadPage() {
           Is your energy provider quietly overcharging you?
         </h1>
         <p className="mt-4 text-lg text-[#1F3D2B]/70">
-          Upload a recent electricity or gas bill. We'll read the rates and check them
-          against every plan on the Irish market — no account, no phone calls.
+          Upload your <strong>electricity or gas bill</strong>. We'll analyze your usage and rates,
+          then compare against every plan on the Irish market — no account, no phone calls.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-10 space-y-8">
           {/* File drop zone */}
           <div>
-            <label className="mb-2 block text-sm font-semibold">Your bill (PDF)</label>
+            <label className="mb-2 block text-sm font-semibold">
+              Your electricity or gas bill (PDF)
+            </label>
             <div
               onDragOver={(e) => { e.preventDefault(); setDragActive(true); }}
               onDragLeave={() => setDragActive(false)}
@@ -144,10 +146,16 @@ export default function UploadPage() {
           </button>
         </form>
 
-        <p className="mt-8 text-center text-xs text-[#1F3D2B]/40">
-          Your bill is read once to extract rates and usage, then discarded from active
-          processing. We never contact your provider or share your details.
-        </p>
+        <div className="mt-8 space-y-2 text-center text-xs text-[#1F3D2B]/40">
+          <p>
+            Your bill is read once to extract rates and usage, then discarded from active
+            processing. We never contact your provider or share your details.
+          </p>
+          <p>
+            <strong>Have solar panels?</strong> No problem — we compare based on your unit rates,
+            not bill totals, so solar credits won't affect the comparison.
+          </p>
+        </div>
       </div>
     </main>
   );

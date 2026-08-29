@@ -7,6 +7,7 @@ export const dynamic = 'force-dynamic';
 interface BillRate {
   band_category: string;
   usage_kwh: number;
+  rate_cents_per_kwh: number;
 }
 
 interface PlanRate {
@@ -147,15 +148,26 @@ export async function GET(req: NextRequest) {
       };
     });
 
-    // 5. Determine the user's current estimated annual cost (from the bill itself)
+    // 5. Determine the user's current estimated annual cost using UNIT RATES from bill
+    // This approach avoids issues with solar credits, refunds, or other bill adjustments
     let currentAnnualCost: number | null = null;
-    if (bill.total_cost_ex_vat && bill.billing_period_start && bill.billing_period_end) {
-      const start = new Date(bill.billing_period_start);
-      const end = new Date(bill.billing_period_end);
-      const days = Math.max(1, (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    if (billRates.length > 0 && annualUsageKwh > 0) {
+      // Calculate usage cost based on the rates extracted from the bill
+      let currentUsageCost = 0;
+      for (const rate of billRates) {
+        // Use the proportion of this band's usage to project annual cost
+        const proportion = Math.max(0, rate.usage_kwh) / Math.max(1, totalBillUsage);
+        currentUsageCost += (annualUsageKwh * proportion * rate.rate_cents_per_kwh) / 100;
+      }
+
+      // Add standing charge if available
+      const standingChargeAnnual = bill.standing_charge_daily_rate
+        ? (bill.standing_charge_daily_rate * 365)
+        : 0;
+
+      const subtotalExVat = currentUsageCost + standingChargeAnnual;
       const vatMultiplier = 1 + (bill.vat_rate ?? 9) / 100;
-      currentAnnualCost =
-        Math.round(((bill.total_cost_ex_vat / days) * 365 * vatMultiplier) * 100) / 100;
+      currentAnnualCost = Math.round(subtotalExVat * vatMultiplier * 100) / 100;
     }
 
     // 6. Sort ascending by cost, attach savings + exit-fee-adjusted flag
