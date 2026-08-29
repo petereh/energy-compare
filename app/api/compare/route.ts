@@ -93,9 +93,8 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Failed to fetch plans' }, { status: 500 });
     }
 
-    const candidatePlans = (plans as unknown as Plan[]).filter(
-      (p) => !bill.provider_name || p.providers?.name?.toLowerCase() !== bill.provider_name.toLowerCase()
-    );
+    // Show ALL plans including current provider (they might have better rates!)
+    const candidatePlans = plans as unknown as Plan[];
 
     // 4. Compute estimated annual cost for each plan
     const results = candidatePlans.map((plan) => {
