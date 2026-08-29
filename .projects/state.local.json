@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "project": {
+    "catalog": "prod",
+    "initializedAt": "2026-08-27T23:19:14.519Z",
+    "merchantDisplayName": "energycompare",
+    "merchantId": "acct_1U9CYMLwU4XQp1s4",
+    "projectId": "project_61VIaX4FvJ0aGw16816VIaVi6rGC6kkMYmsGpN1AG7Wa",
+    "projectName": "energy-compare"
+  },
+  "providers": {
+    "supabase": {
+      "accountRequestId": "facctrq_61VIaYyACY03A8MfQ16VIaVi6rGC6kkMYmsGpN1AGHey",
+      "configuration": {},
+      "linkedAt": "2026-08-27T23:21:25.358Z",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "redirectUrl": null,
+      "requestedAt": "2026-08-27T23:21:25.358Z",
+      "status": "complete"
+    },
+    "vercel": {
+      "accountRequestId": "facctrq_61VIaY4Z4lqmKtryb16VIaVi6rGC6kkMYmsGpN1AGAs4",
+      "configuration": {},
+      "linkedAt": "2026-08-27T23:20:21.105Z",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "redirectUrl": null,
+      "requestedAt": "2026-08-27T23:20:21.105Z",
+      "status": "complete"
+    }
+  },
+  "resources": {
+    "supabase-plan": {
+      "configuration": {},
+      "createdAt": "2026-08-27T23:21:44.111Z",
+      "lastRevealedAt": "2026-08-27T23:21:44.385Z",
+      "lastStatus": "complete",
+      "name": "supabase-plan",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "resourceId": "fres_61VIaZBP2ci7GINdF16VIaVi6rGC6kkMYmsGpN1AGHzc",
+      "serviceId": "free"
+    },
+    "supabase-project": {
+      "configuration": {
+        "name": "energy-compare",
+        "region": "emea"
+      },
+      "createdAt": "2026-08-27T23:22:04.024Z",
+      "lastRevealedAt": "2026-08-27T23:22:04.256Z",
+      "lastStatus": "complete",
+      "name": "supabase-project",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "resourceId": "fres_61VIaZV7SvwKelunC16VIaVi6rGC6kkMYmsGpN1AGNwu",
+      "serviceId": "project"
+    },
+    "vercel-plan": {
+      "configuration": {},
+      "createdAt": "2026-08-27T23:20:22.892Z",
+      "lastRevealedAt": "2026-08-27T23:20:23.215Z",
+      "lastStatus": "complete",
+      "name": "vercel-plan",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61VIaY9Huh6fLeyxL16VIaVi6rGC6kkMYmsGpN1AGAOW",
+      "serviceId": "hobby"
+    },
+    "vercel-project": {
+      "configuration": {
+        "name": "energy-compare"
+      },
+      "createdAt": "2026-08-27T23:20:24.895Z",
+      "lastRevealedAt": "2026-08-27T23:20:25.145Z",
+      "lastStatus": "complete",
+      "name": "vercel-project",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61VIaYBKq2cIN3mtQ16VIaVi6rGC6kkMYmsGpN1AGTZ2",
+      "serviceId": "project"
+    }
+  },
+  "managedProjectVariableEnvKeys": {
+    ".env": [
+      "ANTHROPIC_API_KEY"
+    ]
+  }
+}

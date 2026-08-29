@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "providers": {
+    "supabase": {
+      "name": "Supabase"
+    },
+    "vercel": {
+      "name": "Vercel"
+    }
+  },
+  "resources": {
+    "supabase-plan": {
+      "name": "supabase-plan",
+      "providerName": "Supabase",
+      "serviceId": "free"
+    },
+    "supabase-project": {
+      "name": "supabase-project",
+      "providerName": "Supabase",
+      "serviceId": "project"
+    },
+    "vercel-plan": {
+      "name": "vercel-plan",
+      "providerName": "Vercel",
+      "serviceId": "hobby"
+    },
+    "vercel-project": {
+      "name": "vercel-project",
+      "providerName": "Vercel",
+      "serviceId": "project"
+    }
+  },
+  "environments": {
+    "default": {
+      "output": ".env",
+      "resources": [
+        {
+          "resourceName": "supabase-plan"
+        },
+        {
+          "resourceName": "supabase-project"
+        },
+        {
+          "resourceName": "vercel-plan"
+        },
+        {
+          "resourceName": "vercel-project"
+        }
+      ],
+      "variables": [
+        {
+          "variableName": "anthropic-key",
+          "envKey": "ANTHROPIC_API_KEY"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "anthropic-key": {
+      "name": "anthropic-key",
+      "backendId": "fprjvar_61VIbIbrDgItqsxDA16VIaVi6rGC6kkMYmsGpN1AG9Lk"
+    }
+  }
+}

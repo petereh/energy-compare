@@ -22,8 +22,8 @@ export async function POST(req: NextRequest) {
     }
 
     // 1. Extract raw text from the PDF
-    // Lazy-load pdf-parse to avoid build-time issues
-    const pdfParse = require('pdf-parse');
+    // Use pdf-parse-fork which is serverless-compatible (no DOMMatrix issues)
+    const pdfParse = require('pdf-parse-fork');
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const pdfData = await pdfParse(buffer);
