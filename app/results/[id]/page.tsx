@@ -3,6 +3,15 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 
+interface MicrogenExportRate {
+  export_rate_cents_per_kwh: number;
+  plan_name: string | null;
+  requires_smart_meter: boolean;
+  minimum_contract_months: number | null;
+  additional_requirements: string | null;
+  source_url: string;
+}
+
 interface PlanResult {
   plan_id: string;
   plan_name: string;
@@ -14,6 +23,7 @@ interface PlanResult {
   exit_fee: number;
   rank: number;
   source_url: string | null;
+  microgen_export_rate: MicrogenExportRate | null;
 }
 
 interface CompareResponse {
@@ -155,6 +165,43 @@ export default function ResultsPage() {
                   </a>
                 )}
               </div>
+
+              {/* Microgeneration Rate (Solar Export) */}
+              {r.microgen_export_rate && (
+                <div className="mt-4 rounded-md border-l-4 border-green-500 bg-green-50 px-4 py-3">
+                  <div className="flex items-start gap-2">
+                    <span className="text-lg">☀️</span>
+                    <div className="flex-1">
+                      <div className="font-semibold text-green-900">
+                        Solar Export Rate: {(r.microgen_export_rate.export_rate_cents_per_kwh / 100).toFixed(2)}c/kWh
+                      </div>
+                      {r.microgen_export_rate.plan_name && (
+                        <div className="text-sm text-green-800">
+                          Plan: {r.microgen_export_rate.plan_name}
+                        </div>
+                      )}
+                      <div className="mt-1 text-xs text-green-700">
+                        {r.microgen_export_rate.requires_smart_meter && '✓ Smart meter required'}
+                        {r.microgen_export_rate.minimum_contract_months &&
+                          ` • Min. ${r.microgen_export_rate.minimum_contract_months} months`}
+                      </div>
+                      {r.microgen_export_rate.additional_requirements && (
+                        <div className="mt-1 text-xs text-green-700">
+                          {r.microgen_export_rate.additional_requirements}
+                        </div>
+                      )}
+                      <a
+                        href={r.microgen_export_rate.source_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1 inline-block text-xs text-green-600 underline hover:text-green-800"
+                      >
+                        Learn more about solar export
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

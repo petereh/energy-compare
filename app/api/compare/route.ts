@@ -96,6 +96,27 @@ export async function GET(req: NextRequest) {
     // Show ALL plans including current provider (they might have better rates!)
     const candidatePlans = plans as unknown as Plan[];
 
+    // 3b. Fetch active microgen export rates (for solar customers)
+    const { data: microgenRates, error: microgenError } = await supabaseAdmin
+      .from('microgen_export_rates')
+      .select('*, providers(name)')
+      .eq('active', true);
+
+    if (microgenError) {
+      console.error('Microgen rates fetch error:', microgenError);
+    }
+
+    // Group microgen rates by provider name for easy lookup
+    const microgenByProvider: Record<string, any> = {};
+    if (microgenRates) {
+      for (const rate of microgenRates) {
+        const providerName = rate.providers?.name;
+        if (providerName) {
+          microgenByProvider[providerName] = rate;
+        }
+      }
+    }
+
     // 4. Compute estimated annual cost for each plan
     const results = candidatePlans.map((plan) => {
       // Usage-weighted unit cost: distribute annual usage across this plan's
@@ -135,15 +156,26 @@ export async function GET(req: NextRequest) {
       const vatMultiplier = 1 + (plan.vat_rate ?? 9) / 100;
       const estimatedAnnualCost = Math.round(subtotalExVat * vatMultiplier * 100) / 100;
 
+      const providerName = plan.providers?.name ?? 'Unknown';
+      const microgenRate = microgenByProvider[providerName];
+
       return {
         plan_id: plan.id,
         plan_name: plan.name,
-        provider_name: plan.providers?.name ?? 'Unknown',
+        provider_name: providerName,
         fuel_type: plan.fuel_type,
         estimated_annual_cost: estimatedAnnualCost,
         exit_fee: plan.exit_fee ?? 0,
         contract_length_months: plan.contract_length_months,
         source_url: plan.source_url,
+        microgen_export_rate: microgenRate ? {
+          export_rate_cents_per_kwh: microgenRate.export_rate_cents_per_kwh,
+          plan_name: microgenRate.plan_name,
+          requires_smart_meter: microgenRate.requires_smart_meter,
+          minimum_contract_months: microgenRate.minimum_contract_months,
+          additional_requirements: microgenRate.additional_requirements,
+          source_url: microgenRate.source_url,
+        } : null,
       };
     });
 

@@ -153,15 +153,29 @@ export default function AdminPage() {
       <div className="mx-auto max-w-4xl px-6 py-8">
         <div className="mb-6 flex items-center justify-between">
           <h1 className="text-3xl font-bold">Admin - Add Energy Plan</h1>
-          <button
-            onClick={() => {
-              sessionStorage.removeItem('admin_auth');
-              setAuthenticated(false);
-            }}
-            className="rounded-md bg-red-600 px-4 py-2 text-sm text-white hover:bg-red-700"
-          >
-            Logout
-          </button>
+          <div className="flex gap-3">
+            <a
+              href="/admin/microgen"
+              className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700"
+            >
+              ☀️ Microgen Rates
+            </a>
+            <a
+              href="/admin/view-plans"
+              className="rounded-md bg-[#E8A33D] px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            >
+              View All Plans
+            </a>
+            <button
+              onClick={() => {
+                sessionStorage.removeItem('admin_auth');
+                setAuthenticated(false);
+              }}
+              className="rounded-md bg-red-600 px-4 py-2 text-sm text-white hover:bg-red-700"
+            >
+              Logout
+            </button>
+          </div>
         </div>
 
         {error && (
