@@ -45,7 +45,11 @@ RULES FOR EXTRACTION:
 
 7. IDENTIFIERS
    - "invoice_number": the invoice/bill number, NOT the account number.
-   - "provider_name": the supplier's name.
+   - "provider_name": ONLY extract the actual energy supplier who issued this bill.
+     Look for the company name in headers, logos, or "Supplier:" fields.
+     Common Irish providers: Electric Ireland, Energia, Bord Gáis Energy, SSE Airtricity, Flogas, Pinergy.
+     DO NOT confuse provider names with payment processors, billing agents, or other companies mentioned on the bill.
+     If unsure, return null rather than guessing.
    - "tariff_name": the named tariff/plan, or null if not explicitly named.
 
 8. CONFIDENCE
