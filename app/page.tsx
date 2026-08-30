@@ -98,17 +98,8 @@ export default function UploadPage() {
                   : 'border-[#1F3D2B]/25 bg-white/40'
               }`}
             >
-              <input
-                type="file"
-                accept="application/pdf"
-                multiple
-                onChange={(e) => handleFileChange(e.target.files)}
-                className={`absolute inset-0 h-full w-full cursor-pointer opacity-0 ${
-                  files.length >= 2 ? 'pointer-events-none' : ''
-                }`}
-              />
               {files.length > 0 ? (
-                <div className="space-y-2">
+                <div className="space-y-2 relative z-10">
                   {files.map((file, idx) => (
                     <div
                       key={idx}
@@ -122,20 +113,36 @@ export default function UploadPage() {
                           e.stopPropagation();
                           removeFile(idx);
                         }}
-                        className="text-xs text-[#1F3D2B]/50 hover:text-[#1F3D2B] underline"
+                        className="text-xs text-[#1F3D2B]/50 hover:text-[#1F3D2B] underline relative z-20"
                       >
                         Remove
                       </button>
                     </div>
                   ))}
                   {files.length < 2 && (
-                    <p className="pt-2 text-xs text-[#1F3D2B]/50">
-                      Click or drop to add {files.length === 1 ? 'another' : 'more'} bill
-                    </p>
+                    <>
+                      <input
+                        type="file"
+                        accept="application/pdf"
+                        multiple
+                        onChange={(e) => handleFileChange(e.target.files)}
+                        className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                      />
+                      <p className="pt-2 text-xs text-[#1F3D2B]/50">
+                        Click or drop to add {files.length === 1 ? 'another' : 'more'} bill
+                      </p>
+                    </>
                   )}
                 </div>
               ) : (
                 <>
+                  <input
+                    type="file"
+                    accept="application/pdf"
+                    multiple
+                    onChange={(e) => handleFileChange(e.target.files)}
+                    className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                  />
                   <p className="font-medium">Drop your bills here, or click to browse</p>
                   <p className="mt-1 text-sm text-[#1F3D2B]/50">
                     We'll automatically detect electricity vs gas • Up to 2 PDFs, 10MB each
