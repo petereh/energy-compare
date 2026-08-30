@@ -75,8 +75,19 @@ export async function POST(req: NextRequest) {
 
       const textBlock = message.content.find((b) => b.type === 'text');
       const rawJson = textBlock && 'text' in textBlock ? textBlock.text : '';
-      // Defensive strip in case the model wraps in code fences despite instructions
-      const cleaned = rawJson.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+
+      // Aggressive cleaning: strip everything before first { and after last }
+      let cleaned = rawJson.trim();
+      const firstBrace = cleaned.indexOf('{');
+      const lastBrace = cleaned.lastIndexOf('}');
+
+      if (firstBrace === -1 || lastBrace === -1) {
+        console.error('No JSON object found in Claude response:', rawJson.substring(0, 200));
+        throw new Error('Claude did not return valid JSON');
+      }
+
+      cleaned = cleaned.substring(firstBrace, lastBrace + 1);
+      console.log('[Upload] Extracted JSON length:', cleaned.length);
       extracted = JSON.parse(cleaned);
     } catch (err) {
       console.error('Extraction error:', err);
