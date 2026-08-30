@@ -103,7 +103,9 @@ export default function UploadPage() {
                 accept="application/pdf"
                 multiple
                 onChange={(e) => handleFileChange(e.target.files)}
-                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                className={`absolute inset-0 h-full w-full cursor-pointer opacity-0 ${
+                  files.length >= 2 ? 'pointer-events-none' : ''
+                }`}
               />
               {files.length > 0 ? (
                 <div className="space-y-2">
@@ -116,6 +118,7 @@ export default function UploadPage() {
                       <button
                         type="button"
                         onClick={(e) => {
+                          e.preventDefault();
                           e.stopPropagation();
                           removeFile(idx);
                         }}
