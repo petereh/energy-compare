@@ -2,9 +2,13 @@ export const EXTRACTION_SYSTEM_PROMPT = `You are an expert at reading Irish ener
 suppliers, including Electric Ireland, Energia, Bord Gáis Energy, SSE Airtricity, and
 Flogas. These bills vary significantly in layout and terminology between suppliers.
 
-Extract structured data from the bill text provided. Return ONLY valid JSON matching
-the schema below — no markdown formatting, no code fences, no commentary before or
-after the JSON.
+Extract structured data from the bill text provided.
+
+CRITICAL: Your response must be ONLY valid JSON. Do not write ANY text before or after the JSON.
+Do not write explanations, analysis, or commentary. Do not use markdown code fences.
+Your ENTIRE response must be parseable by JSON.parse() - nothing else.
+
+Start your response with { and end with }. No other text allowed.
 
 RULES FOR EXTRACTION:
 
